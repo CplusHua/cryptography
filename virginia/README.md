@@ -129,6 +129,276 @@ rra:{109, 7}
  程序输出结束。
 ---------------------------------------------------------------------------------------
 ````
-friedman测试相比kasiski测试更为准确，因此可以结合两种方法。
+friedman测试相比kasiski测试更为准确，因此可以结合两种方法。</br>
+接下来就是使用重合因子指数法来确定密钥：
+````
+---------------------------------------------------------------------------------------
+ 以下是程序示例输出：
+---------------------------------------------------------------------------------------
+└──╼ $python3 ffkey.py 
+请输入密文:gpeflwhnbsnyytumpylushzaosyrrauyamosbhrtunltigafepwnspxeabinsinraiuhpetqvruutowyfhhdlwuangeaacybvsnvdnajrrxaehnoegspoioyaigousomeatsfbzthuyfbzsbpwoaaiqlligbouhpeomeailohohgphtbqngpgagmrrsutvwnfdctuueadbonzeshclhzefuitgpeqvqnnvdbbnmrvbhanhbaejoiaemsgyogttianulbvgqpmsnbifmceqeigoqhnbtulsaemdbphgjpagmulfmaakqrbvggyuiaqntousswrplxtummgvxozinlvztumsrkyscwnqlhtnvdhzylraszlhhndeolyntciqlxiabocsucrawullegpelmctjpeelnhrzevzwoaaeecutvwnbmynrzgloupcqnrzmaalrrzolgatulmenzegoyfnktbymfbzazlhtntllhhdcpyfpwaytyohfaakeqtunczoipxeqpeuhmhnlenyfyvvsgyocgqoaphsbueipnayuagayrfbhrpgphtsraihndegoyfhbuelzagpeezcnnxofpnibvtbnoiqmaakfiimiajfofmcbuziqmngpulemlnacoaawvabtumiezinfqsgoyrrisbuzoebhvzvobspevzefaibuulrfpryceakeuhmpewvrunozgcbtjlrbefhnifnapacoabhnanhruaafzavtuelmmvafvamdrapbuxeabsnuxdvaenzydvvohyjrraeaaaeamrnacoaeeelhognuakumrvtnsfyvtlspntrltbiutgtejpnhyqfriotgpagabelpaquyvrzbrlhsgirglxrvohgwbyfqcnsfyzmnghflldophnibvaysspugsvjulvvsgyocgwrfioiybmhzwlrbenjbeeafbywequupoosrnuyhhdntsbbmeymsfznusniaaiuaeiyscntjrnphcrtlfmutumrfmoraqsulxtummbuyynaaebfevniaknhnbtupmlnbtryqafibbbnayttuljaemngzxiqnueucsuinqabohohgabifilyzofsqcvlhtgpeelmuybsuhpeomeakypywrnifejisglxeamrtpysqqstbmtswrfaodlqnyphefbhnaheimrnwjenteqtcsqqrrjneqxojllsnvdrebahatrkpitwrvzqhnbiuhpeqiiyfmervfbynwrvtlmcvrgenymaalmbznosbhrzycbvdvacoaaaeluvbqdnifeuwwsyyqhmngsshndevoyaeltullezirxhztrzekwfavviannongohuamnvwuvwazmtbtyapwmcsytrnavsorrehlkcdabmlmutumrflyayttupmoeqwnuneqboqvnhnbdbjnoejugabelaavknhnbiqpxngsnbdgybenzphdfwtulsmnlezlmthlygocntatuhniuitrknhrvtulpigilshwtfehvjbeimrliiyfpohsxenzllouvrkoamcdrvtvhfllinqjbuzuiyfnoylhvtihqwcgvlisqhnkinygkavqngpeflnhvvgfaynlmaezugbehnaudvnfryynguaapqohtdolnoqiyllmaalybblsbvsphhbrvespnfewmlvorrfpryceakesvligpafmirpmdzlnoppagdctubhrtcngpefljatmszfjlnvafvotyqnrkcsgwgvcytumbbfunqgohabtumiamirzitvvhwuqcudclymnnifeuqmgvwoaaeecyhvaeallgvmsvuwrrisrocsiqgbyunqtenyhjhatjoutuqszlhtnteakiwzmnghhdcwwrymaemtulhtbkoajyngzaglopbvtulmepwnfaungtynsfojqntkyvvitvvhsbvllzifnzafabeljrbhxeabhroirvhoazorewuakcntpifcicnbibunhrzensmovamhjbtbaalbjoaxhlzccntcbumeedagpingpefairvvgbmjhlaiphfvvooedbippialgeeoeajcefkaaiycntlrkopbvwvabohbiaqorlbogoywbzkvuacnxighftuqsipnayuagayruisflfdbubrlhtbcculxiabhralavvianifbcrlvotuaaakuszmnjlzialtulgwbzkvuaucbogoylnatqlarrmoswiwrzaakqhrvtulwaytcbtysswrrenrnxojlltumrrpmnbvegoymnvtulhgbmsgvnhrpuzhhdhupcpfegpeelcsawekjosrnoeabifaaqznagmoshzfnqrfabepiuflcsvonbyunpmostunfdighfrraohywefinqoiwgwcbumeedegovolaiuhpeomeahleciiellospuzhhmnkhvuysntlzffismmnjbiamsflhtbctbunhrzonkhogxrbwyrygaqqosgmdgoyyuivriyeazegblnrltbtssuwpnuxwvbhzvmtbntulgipwuykinygpbphtbctplltnqnchltfehvjbwrzejluknvdylntummtvugnqngheiaocnyynbbtbwotgwotyyagisgyuiawngoysrxaeamnbeijhhtlwunsftbatnynohbwvabeimrlwurgjrnphbblynuxsbclrxoaytynkdufbeqhflbntulmazmsgyintuagllintwrsffvbtrknojwrxphpricroupcqnrzmaalhrhftubhrzyfnktbymrxqntphhnzmbusmrinfzocpmsfuimnbtryqhnblvuyybctnryucnoescfrawbyeshqyhlvumiiapunucalpmhv
+请输入密钥长度:7
+g:████████████████████████████████
+n:█████████████████████████████████████████████████
+u:███████████████████████████
+h:███████████████
+r:██████████████████████████████████████████████
+s:██████████
+l:█████████████
+p:██████████
+a:█████████████████████████████████
+t:█████████
+o:█████
+e:█████████████████
+y:███████████████████
+b:██████████████████████████████████████
+v:██████████████████████████
+q:███████████████
+j:█████
+f:███████████████████
+z:██████████
+c:█████████
+i:█████
+x:█
+m:█
+------------------------------
+{'g': 32, 'n': 49, 'u': 27, 'h': 15, 'r': 46, 's': 10, 'l': 13, 'p': 10, 'a': 33, 't': 9, 'o': 5, 'e': 17, 'y': 19, 'b': 38, 'v': 26, 'q': 15, 'j': 5, 'f': 19, 'z': 10, 'c': 9, 'i': 5, 'x': 1, 'm': 1}
+------------------------------
+{'a': 34, 'b': 6, 'c': 12, 'd': 18, 'e': 53, 'f': 9, 'g': 8, 'h': 25, 'i': 29, 'j': 1, 'k': 3, 'l': 17, 'm': 10, 'n': 28, 'o': 31, 'p': 8, 'q': 0, 'r': 25, 's': 26, 't': 37, 'u': 11, 'v': 4, 'w': 10, 'x': 1, 'y': 8, 'z': 0}
+-----------------------------
+因子:次数
+  n: 40 
+  d: 34
+  h: 29
+  e: 27
+  b: 21
+----------
+p:██████████████████████
+b:████████████████████████████████████████
+m:███████████████████████████████████████████████████
+z:███████████████████████
+a:███████████████████████████████████
+t:███████████████████████
+w:██████████████████████████████
+q:█████████████████████████████
+v:█████████████████████████████████
+x:████████
+g:█████████
+o:███████
+u:███████████
+e:█████████
+i:█████████████████████████
+d:███████
+c:████████
+l:█████████████
+k:█████████
+s:██
+f:██
+n:████████████
+j:████
+h:█
+------------------------------
+{'p': 22, 'b': 40, 'm': 51, 'z': 23, 'a': 35, 't': 23, 'w': 30, 'q': 29, 'v': 33, 'x': 8, 'g': 9, 'o': 7, 'u': 11, 'e': 9, 'i': 25, 'd': 7, 'c': 8, 'l': 13, 'k': 9, 's': 2, 'f': 2, 'n': 12, 'j': 4, 'h': 1}
+------------------------------
+{'a': 34, 'b': 6, 'c': 11, 'd': 18, 'e': 52, 'f': 9, 'g': 8, 'h': 25, 'i': 29, 'j': 1, 'k': 3, 'l': 17, 'm': 10, 'n': 28, 'o': 31, 'p': 8, 'q': 0, 'r': 25, 's': 26, 't': 37, 'u': 11, 'v': 4, 'w': 10, 'x': 1, 'y': 8, 'z': 0}
+-----------------------------
+因子:次数
+  i: 46
+  b: 42
+  c: 38
+  j: 30
+  s: 27
+----------
+e:█████████████████████████████████████████████████████
+s:███████████████████████████████
+p:████████
+a:██████████████████████████████████
+u:███████████████
+h:███████████████████████
+i:█████████████████████████████████
+n:███████████████████████████████
+v:███
+y:██████████
+c:█████████████
+d:████████████
+t:████████████████████████████████████████
+o:███████████████████████████
+r:██████████████████████████
+b:█████
+g:███████
+m:████████████
+w:██████████
+l:████████████
+f:█████
+k:███
+------------------------------
+{'e': 53, 's': 31, 'p': 8, 'a': 34, 'u': 15, 'h': 23, 'i': 33, 'n': 31, 'v': 3, 'y': 10, 'c': 13, 'd': 12, 't': 40, 'o': 27, 'r': 26, 'b': 5, 'g': 7, 'm': 12, 'w': 10, 'l': 12, 'f': 5, 'k': 3}
+------------------------------
+{'a': 34, 'b': 6, 'c': 11, 'd': 18, 'e': 52, 'f': 9, 'g': 8, 'h': 25, 'i': 29, 'j': 1, 'k': 3, 'l': 17, 'm': 10, 'n': 28, 'o': 31, 'p': 8, 'q': 0, 'r': 25, 's': 26, 't': 37, 'u': 11, 'v': 4, 'w': 10, 'x': 1, 'y': 8, 'z': 0}
+-----------------------------
+因子:次数
+  a: 55
+  j: 39
+  k: 30
+  b: 27
+  e: 25
+----------
+f:█████████████████████████████
+n:███████████████████████████████████
+y:████████████
+o:████
+r:███████████████████████████████████████
+g:███████████████████████████████████████████████
+s:██████████
+u:████████████████████████████
+a:██████████████████████████████████
+e:█████████████████████
+p:████████
+h:███████████
+b:███████████████████████████████████████
+q:█████████████████
+j:████████
+t:███████
+l:█████████████████
+z:███████████
+c:████
+v:█████████████████████████
+i:███
+x:██
+k:██
+------------------------------
+{'f': 29, 'n': 35, 'y': 12, 'o': 4, 'r': 39, 'g': 47, 's': 10, 'u': 28, 'a': 34, 'e': 21, 'p': 8, 'h': 11, 'b': 39, 'q': 17, 'j': 8, 't': 7, 'l': 17, 'z': 11, 'c': 4, 'v': 25, 'i': 3, 'x': 2, 'k': 2}
+------------------------------
+{'a': 34, 'b': 6, 'c': 11, 'd': 18, 'e': 52, 'f': 9, 'g': 8, 'h': 25, 'i': 29, 'j': 1, 'k': 3, 'l': 17, 'm': 10, 'n': 28, 'o': 31, 'p': 8, 'q': 0, 'r': 25, 's': 26, 't': 37, 'u': 11, 'v': 4, 'w': 10, 'x': 1, 'y': 8, 'z': 0}
+-----------------------------
+因子:次数
+  n: 46
+  d: 32
+  f: 26
+  e: 26
+  c: 24
+----------
+l:█████████████████████████████████████████████████████████████
+y:█████████████████████████████
+s:█████████████████
+a:██████████████████████████████████
+t:███████████
+p:██████████████████████████████████
+h:███████████████████████████████████
+u:███████████████████████████
+n:█████
+b:█████████
+o:████████████████████████
+i:██████████
+d:██████
+v:██████████████████
+m:████████████
+k:██████████████████████
+z:███████████████████████
+c:████
+j:█████████████
+f:██████
+w:███████
+e:██
+q:██
+x:█
+r:█
+------------------------------
+{'l': 61, 'y': 29, 's': 17, 'a': 34, 't': 11, 'p': 34, 'h': 35, 'u': 27, 'n': 5, 'b': 9, 'o': 24, 'i': 10, 'd': 6, 'v': 18, 'm': 12, 'k': 22, 'z': 23, 'c': 4, 'j': 13, 'f': 6, 'w': 7, 'e': 2, 'q': 2, 'x': 1, 'r': 1}
+------------------------------
+{'a': 34, 'b': 6, 'c': 11, 'd': 18, 'e': 52, 'f': 9, 'g': 8, 'h': 25, 'i': 29, 'j': 1, 'k': 3, 'l': 17, 'm': 10, 'n': 28, 'o': 31, 'p': 8, 'q': 0, 'r': 25, 's': 26, 't': 37, 'u': 11, 'v': 4, 'w': 10, 'x': 1, 'y': 8, 'z': 0}
+-----------------------------
+因子:次数
+  h: 50
+  d: 27
+  e: 26
+  c: 23
+  k: 20
+----------
+w:████████████
+y:████████████████████████████████████████████
+u:█████████████████████████████████████
+m:██████████████████████████████
+f:█████████████████████████
+x:█████████████████
+i:████████████████████████
+p:███████
+h:██████████████████████████████████
+g:███████
+v:████
+j:█████████
+n:███████████████████████████████████████
+s:███████
+l:█████████████████
+c:█████████████████████████████
+b:█████████████████████
+q:█████████
+o:████████████████████████
+z:█████████
+a:█████
+e:██
+d:█
+------------------------------
+{'w': 12, 'y': 44, 'u': 37, 'm': 30, 'f': 25, 'x': 17, 'i': 24, 'p': 7, 'h': 34, 'g': 7, 'v': 4, 'j': 9, 'n': 39, 's': 7, 'l': 17, 'c': 29, 'b': 21, 'q': 9, 'o': 24, 'z': 9, 'a': 5, 'e': 2, 'd': 1}
+------------------------------
+{'a': 34, 'b': 6, 'c': 11, 'd': 18, 'e': 52, 'f': 9, 'g': 8, 'h': 25, 'i': 29, 'j': 1, 'k': 3, 'l': 17, 'm': 10, 'n': 28, 'o': 31, 'p': 8, 'q': 0, 'r': 25, 's': 26, 't': 37, 'u': 11, 'v': 4, 'w': 10, 'x': 1, 'y': 8, 'z': 0}
+-----------------------------
+因子:次数
+  g: 34
+  b: 28
+  d: 27
+  e: 23
+  m: 21
+----------
+h:██████████████████████████
+t:███████████████████████████████████████████████
+s:████████████████████████████
+r:████████████████████████
+o:████████████████████████████████████
+n:███████████████████████████████
+e:█████████████████████████████████████████████████
+d:██████████████
+f:█████████████
+i:███████████████████████████
+a:██████████████████████████████
+l:█████████████████
+m:█████████
+g:██████
+c:██████████
+p:█████████
+y:█████████
+v:██████
+u:████████
+w:█████████
+q:█
+b:██
+j:█
+k:█
+------------------------------
+{'h': 26, 't': 47, 's': 28, 'r': 24, 'o': 36, 'n': 31, 'e': 49, 'd': 14, 'f': 13, 'i': 27, 'a': 30, 'l': 17, 'm': 9, 'g': 6, 'c': 10, 'p': 9, 'y': 9, 'v': 6, 'u': 8, 'w': 9, 'q': 1, 'b': 2, 'j': 1, 'k': 1}
+------------------------------
+{'a': 34, 'b': 6, 'c': 11, 'd': 18, 'e': 52, 'f': 9, 'g': 8, 'h': 25, 'i': 29, 'j': 1, 'k': 3, 'l': 17, 'm': 10, 'n': 28, 'o': 31, 'p': 8, 'q': 0, 'r': 25, 's': 26, 't': 37, 'u': 11, 'v': 4, 'w': 10, 'x': 1, 'y': 8, 'z': 0}
+-----------------------------
+因子:次数
+  a: 57
+  k: 37
+  f: 30
+  b: 24
+  j: 22
+----------
 
+---------------------------------------------------------------------------------------
+ 程序输出结束。
+---------------------------------------------------------------------------------------
+````
+选择因子这七次中次数最高的因子：nianhga</br>
+使用维吉尼亚解密函数对其进行解密：
+````
+---------------------------------------------------------------------------------------
+ 以下是程序示例输出：
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 程序输出结束。
+---------------------------------------------------------------------------------------
+````
 
