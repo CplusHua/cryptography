@@ -11,9 +11,9 @@ def Scanf():
 
     ciphertext.lower()
 
-def friedman(ciphLen):
+def friedman(ciphLen):  
 
-    for i in range(ciphLen):
+    for i in range(ciphLen):           #此密钥分量位置
 
         alphabet = {}
 
@@ -21,7 +21,7 @@ def friedman(ciphLen):
 
         text = ciphertext[i::ciphLen] #取出密钥此密钥分量对应的密文部分
         
-        for i in text:
+        for i in text:                #初始化alphabet数组
 
             alphabet[i] = 0
 
@@ -30,7 +30,7 @@ def friedman(ciphLen):
 
             alphabet[i] += 1
         
-        for i in alphabet:
+        for i in alphabet:             #计算重合因子指数
 
             countnum += alphabet[i] * (alphabet[i] - 1)
 
