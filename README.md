@@ -8,4 +8,4 @@ Some methods of common cryptography
 ### 5.firexor&nbsp;&nbsp;--> 文件异或函数
 ### 6.thomas&nbsp;--> 托马斯转盘加密
 ### 7.virginia&nbsp;--> 维吉尼亚密码
-### 8.beacon&nbsp;&nbsp;-->培根密码
+### 8.beacon&nbsp;--> 培根密码
