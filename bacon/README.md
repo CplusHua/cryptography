@@ -14,8 +14,20 @@
   e	AABAA	  l	ABABA	  r	BAAAA	  y	BABBA
   f	AABAB	  m	ABABB	  s	BAAAB	  z	BABBB
   
-  培根密码实际上就是一种替换密码，根据所给表一一对应转换即可加密解密 。它的特殊之处在于：可以通过不明显的特征来隐藏密码信息，比如大小写、正斜体等，只要两个不同的属性，密码即可隐藏。
+  培根密码实际上就是一种替换密码，根据所给表一一对应转换即可加密解密 。它的特殊之处在于：
+可以通过不明显的特征来隐藏密码信息，比如大小写、正斜体等，只要两个不同的属性，密码即可隐藏。
   
-  举例：以下一段包含了'steganography'，正常字体是A，粗体是B：
-To encodeamessage each letteroftheplaintextis replaced by a group of fiveofthe letters'A'or 'B'.
+  举例：
+bacoN is one of aMerICa'S sWEethEartS. it's A dARlinG, SuCCulEnt fOoD tHAt PaIRs FlawLE
+ 直接放入CapitalDeBacon.py
+---------------------------------------------------------------------------------
+Program output：
+---------------------------------------------------------------------------------
+此程序只使用了密文对照表中的第二张表，且AB的顺序请自行斟酌
+输入要解密的密文:bacoN is one of aMerICa'S sWEethEartS. it's A dARlinG, SuCCulEnt fOoD tHAt PaIRs FlawLE
+AAAABAAAAAAAABAABBABABBAAABAAABAAABABBAAABBABBAABAAABABABBABABBABAAABB
+baconisnotfood
+---------------------------------------------------------------------------------
+end
+---------------------------------------------------------------------------------            
 ````
