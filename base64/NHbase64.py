@@ -105,7 +105,7 @@ def main():
 
     newobj = base64("qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP-|0987654321")
 
-    print(newobj.debase64(newobj.enbase64("abc")))
+    print(newobj.debase64(newobj.enbase64("nianhua")))
 
 if "__main__" == __name__:
 
