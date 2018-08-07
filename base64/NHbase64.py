@@ -101,6 +101,13 @@ class base64:
 
         return self.BinToStr(binstr)
 
-newobj = base64("qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP-|0987654321")
+def main():
 
-print(newobj.debase64(newobj.enbase64("nianhua")))
+    newobj = base64("qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP-|0987654321")
+
+    print(newobj.debase64(newobj.enbase64("abc")))
+
+if "__main__" == __name__:
+
+    main()
+
