@@ -9,7 +9,7 @@
   明文中的每个字母都会转换成一组五个英文字母。其转换依靠下表：
   a	AAAAA	  g	AABBA	  n	ABBAA	  t	BAABA
   b	AAAAB	  h	AABBB	  o	ABBAB	  u-v	BAABB
-  c	AAABA	  i-j	ABAAA p ABBBA	  w	BABAA
+  c	AAABA	  i-j	ABAAA	p ABBBA	  w	BABAA
   d	AAABB	  k	ABAAB	  q	ABBBB	  x	BABAB
   e	AABAA	  l	ABABA	  r	BAAAA	  y	BABBA
   f	AABAB	  m	ABABB	  s	BAAAB	  z	BABBB
