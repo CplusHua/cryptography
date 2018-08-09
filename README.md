@@ -9,4 +9,4 @@ Some methods of common cryptography
 ### 6.thomas&nbsp;--> 托马斯转盘加密
 ### 7.virginia&nbsp;--> 维吉尼亚密码
 ### 8.bacon&nbsp;&nbsp;&nbsp;--> 培根密码
-### 9.substitution--> 简单替换
+### 9.replace&nbsp;&nbsp;--> 简单替换
