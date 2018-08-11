@@ -1,3 +1,9 @@
+###
+###    Date:2018-08-11
+###   Time:12:33 GMT
+###  Author:nianhua
+###
+
 class SimSubst:
 
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
@@ -19,14 +25,23 @@ class SimSubst:
             afterencry += self.ciphertext[self.alphabet.index(i)]
     
         return afterencry
+    
+    def uncode(self,cipher):
 
+        afterencry = ''
+
+        for i in cipher:
+
+            afterencry += self.alphabet[self.ciphertext.index(i)]
+
+        return afterencry
 
 
 def main():
 
     newobj = SimSubst()
 
-    print(newobj.encode("abcd"))
+    print(newobj.uncode(newobj.encode("nianhua")))
 
 
 
