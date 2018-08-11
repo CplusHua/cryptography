@@ -19,3 +19,13 @@ In [4]: print(newobj.uncode("foqfixq"))
 nianhua
 
 ````
+简单替换密码的破解：</br>
+  对于简单替代密码的破解，大致可分为以下三类方法：<br>
+  
+
+
+
+
+
+
+
