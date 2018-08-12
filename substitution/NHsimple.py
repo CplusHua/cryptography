@@ -4,19 +4,19 @@
 ###  Author:nianhua
 ###
 
-class SimSubst:
+class SimpleSub:
 
-    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-    def __init__(self,ciphertext = 'qwertyuiopasdfghjklzxcvbnm'):
+    def __init__(self,ciphertext = 'QWERTYUIOPASDFGHJKLZXCVBNM'):
 
         if len(ciphertext) != 26 :
 
-            ciphertext = 'qwertyuiopasdfghjklzxcvbnm'
+            ciphertext = 'QWERTYUIOPASDFGHJKLZXCVBNM'
 
         self.ciphertext = ciphertext
 
-    def encode(self,plaintext):
+    def encipher(self,plaintext):
 
         afterencry = ''
 
@@ -26,7 +26,7 @@ class SimSubst:
     
         return afterencry
     
-    def uncode(self,cipher):
+    def decipher(self,cipher):
 
         afterencry = ''
 
@@ -39,9 +39,9 @@ class SimSubst:
 
 def main():
 
-    newobj = SimSubst()
+    newobj = SimpleSub()
 
-    print(newobj.uncode(newobj.encode("nianhua")))
+    print(newobj.encipher("THESECHATSARETHEPLEASURABLE"))
 
 
 
