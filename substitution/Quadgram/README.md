@@ -50,8 +50,8 @@ while 1:
             count = 0                                #清除计数器
         count = count+1                              #计数器计数
     # keep track of best score seen so far
-    if parentscore>maxscore:                         #当尝试超过一千次都没有得到一个子分数大于父分数，并且分数需要大于一个很低的分数（省的是假的）
-        maxscore,maxkey = parentscore,parentkey[:]   #
+    if parentscore>maxscore:                         #当尝试超过一千次都没有得到一个子分数大于父分数
+        maxscore,maxkey = parentscore,parentkey[:]   #并且分数需要大于一个很低的分数（省的是假的）
         print '\nbest score so far:',maxscore,'on iteration',i
         ss = SimpleSub(maxkey)
         print '    best key: '+''.join(maxkey)
