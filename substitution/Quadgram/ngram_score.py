@@ -18,7 +18,7 @@ class ngram_score(object):
         #计算对数概率
         for key in self.ngrams.keys():
             self.ngrams[key] = log10(float(self.ngrams[key])/self.N)  #使用lg(key次数/总次数) 替代 key次数
-        self.floor = log10(0.01/self.N)  #不是很理解
+        self.floor = log10(0.01/self.N)  #这是一个默认最小值
 
     def score(self,text):
         ''' 计算文本得分 '''
