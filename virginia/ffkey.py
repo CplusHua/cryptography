@@ -3,6 +3,8 @@
 
 import operator
 
+
+
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 ciphertext = ""
@@ -109,7 +111,7 @@ def FreqAnaly(nowList):
 
     getkey(nowDic,len(nowList)) 
 
-    #print(nowDic)
+    print(nowDic)
 
 
 def StrSplit():
@@ -124,8 +126,14 @@ def StrSplit():
 def Scanf():
 
     global ciphertext,keytLen
+    
+    test = filter(str.isalpha,input("请输入密文:"))
 
-    ciphertext = input("请输入密文:")
+    for i in test:
+
+        if 97 <= ord(i) <= 122:
+
+            ciphertext += i
 
     keytLen = int(input("请输入密钥长度:"))
 
