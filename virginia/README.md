@@ -4,8 +4,18 @@
 ###  Author:nianhua
 ###
 
+````
+文件devirginia.py ： 用来解密维吉尼亚
+文件envirginia.py ： 用来加密维吉尼亚
+文件fkey.py       ： 通过比较最大频率来获取本段的key
+文件ffkey.py      ： 通过匹配尽可能多的频率来获取本段的key
+文件friedman.py   ： friedman测试确定密钥长度
+文件kasiski.py    ： 卡西斯基测试确定密钥长度
+````
+
+
 ***
-华丽的分割线
+<center>华丽的分割线</center>
 ***
 Ps.算了算了··· 还是写中文吧，谷歌翻译用的要死要死的。</br>
 #首先说一下这几个文件是干嘛的：</br>
