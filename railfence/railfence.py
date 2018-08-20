@@ -153,7 +153,7 @@ def main():
 
     newobj = Railfence()
 
-    print(newobj.deciphe(newobj.enciphe('123456789123456789123456789123456789',7),7))
+    print(newobj.deciphe('Wnb.r.ietoeh Fo"lKutrts"znl cc hi ee ekOtggsnkidy hini cna neea civo lh',8))
 
 if "__main__" == __name__ :
 
