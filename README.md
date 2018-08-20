@@ -10,4 +10,4 @@ Some methods of common cryptography
 ### 7&nbsp;&nbsp;.virginia&nbsp;--> 维吉尼亚密码
 ### 8&nbsp;&nbsp;.bacon&nbsp;&nbsp;&nbsp;--> 培根密码
 ### 9&nbsp;&nbsp;.replace&nbsp;--> 简单替换
-### 10.railfence&nbsp;--> 栅栏密码
+### 10.railfence--> 栅栏密码
