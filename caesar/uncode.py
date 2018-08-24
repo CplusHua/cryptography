@@ -1,18 +1,25 @@
-print("传统凯撒加密，需要注意的是\n此处为向前移动，字母表为普通顺序")
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-
-print("凯撒密码破解，会显示密钥")
+alphabetb = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+alphabets = "abcdefghijklmnopqrstuvwxyz"
 
 ciphertext = input("请输入要破解的密码:")
 
 for i in range(1,26):
 
-    print (i,end=":")
+    plaintext =""
 
     for j in ciphertext:
+        
+        if 64 < ord(j) < 91:
+        
+            plaintext += alphabetb[alphabetb.find(j)-i-1]
+        
+        elif 96 < ord(j) <123:
 
-        print (alphabet[alphabet.find(j)-i-1],end="")
+            plaintext += alphabets[alphabets.find(j)-i-1]
 
-    print("")
+        else:
 
+            plaintext += j
+    
+    print("%2d:%s"%(i,plaintext))
