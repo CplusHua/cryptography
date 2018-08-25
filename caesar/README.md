@@ -10,7 +10,7 @@
   v1.3更新，会按照评分高低自动对26次解密进行排序
 
 ````
-└──╼ #python3 nn.py 
+└──╼ #python3 autodecode.py 
 请输入要破解的密码:ofobi KCMSS mrkbkmdob sx dro zvksxdohd gyevn lo oxmbizdon.
  9:-195.63:every ASCII character in the plaintext would be encrypted.
  2:-332.25:lclyf HZJPP johyhjaly pu aol wshpualea dvbsk il lujyfwalk.
