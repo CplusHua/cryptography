@@ -11,3 +11,5 @@ Some methods of common cryptography
 ### 8&nbsp;&nbsp;.bacon&nbsp;&nbsp;&nbsp;--> 培根密码
 ### 9&nbsp;&nbsp;.replace&nbsp;--> 简单替换
 ### 10.railfence--> 栅栏密码
+
+啊啊啊啊，我上个周干了什么！！！
