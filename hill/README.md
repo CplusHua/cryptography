@@ -10,6 +10,7 @@ hill密码是古典密码中多表代换密码中的一部分。</br>
 每个字母当作26进制数字:A=0, B=1, C=2... 一串字母当成n维向量，跟一个n×n的矩阵相乘，再将得出的结果模26。
 注意用作加密的矩阵(即密匙)在\mathbb_^n必须是可逆的，否则就不可能译码。只有矩阵的行列式和26互质，才是可逆的。
 ````
+````
 Invented by Lester S. Hill in 1929, the Hill cipher is a polygraphic substitution cipher based on linear algebra. Hill used matrices and matrix multiplication to mix up the plaintext.
 
 To counter charges that his system was too complicated for day to day use, Hill constructed a cipher machine for his system using a series of geared wheels and chains. However, the machine never really sold.
@@ -46,3 +47,4 @@ where d × d-1 = 1(mod 26), and adj(K) is the adjugate matrix of K.
 d (the determinant) is calculated normally for K (for the example above, it is 489 = 21 (mod 26)). The inverse, d-1, is found by finding a number such that d × d-1 = 1 (mod 26) (this is 5 for the example above since 5*21 = 105 = 1 (mod 26)). The simplest way of doing this is to loop through the numbers 1..25 and find the one such that the equation is satisfied. There is no solution (i.e. choose a different key) if gcd(d,26) ≠ 1 (this means d and 26 share factors, if this is the case K can not be inverted, this means the key you have chosen will not work, so choose another one).
 
 That is it. Once K-1 is found, decryption can be performed.
+````
