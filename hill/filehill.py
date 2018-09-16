@@ -1,4 +1,6 @@
 from numpy import *
+#为什么说这是个失败的程序，是因为我居然想着自己去实现往里输入矩阵，我的天啊，我是不是傻～～
+
 
 def JudgeIntNum(floatNum):
 
