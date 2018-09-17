@@ -30,11 +30,13 @@ for i in range(rank):
 
 	for j in range(len(plaintext)//rank):
 
-		tmpNumPlain.append(alphabet.find(plaintext[j*rank+i])+1)
+		tmpNumPlain.append(alphabet.find(plaintext[j*rank+i]))
 
 	numPlain.append(tmpNumPlain)
 
 numPlain = mat(numPlain)
+
+print (numPlain)
 
 cipherMatrix = transpose(dot(encryMatrix,numPlain)).getA()
 
@@ -42,7 +44,7 @@ for i  in cipherMatrix:
 
 	for j in i:
 
-		print (alphabet[j%26-1],end='')
+		print (alphabet[j%26],end='')
 
 
 print()
