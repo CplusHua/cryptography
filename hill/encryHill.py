@@ -1,3 +1,8 @@
+#
+#    Date:2018-09-17
+#   Time:07:50 GMT
+#  Author:nianhua
+#
 from numpy import *
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
