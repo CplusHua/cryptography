@@ -197,67 +197,72 @@ def enkey(secretkey):  # 生成子密钥
 
 def Sbox(plaintext, sub):
 
+    # 压缩替换呀
     return HexToBin("%x" % S[sub][int(plaintext[:1] + plaintext[-1:], 2) * 16 + int(plaintext[1:-1], 2)])
 
 
 def Function(plaintext, secretkey):
+    "F函数，唯一的非线性环节依靠S盒实现"
 
     plaintext = Binxor(SubstitutionBox(plaintext, E),
-                       secretkey)  # 经过E盒扩充异或当前key
+                       secretkey)  # 经过E盒扩充异或当前key 48bit
 
     sout = ''
 
     for i in range(8):
 
-        sout += Sbox(plaintext[i * 6:(i + 1) * 6], i)
+        sout += Sbox(plaintext[i * 6:(i + 1) * 6], i)  # S盒，唯一的非线性结构
 
-    sout = SubstitutionBox(sout, P)
+    sout = SubstitutionBox(sout, P)  # 使用P盒置换
 
     return sout
 
 
-def encrypt(plaintext, secretkey):
+def endecrypt(plaintext, secretkey):
+    "加解密函数，通过传入密文/明文,keys[]是一个数组进行解密或加密"
 
-    netss = SubstitutionBox(HexToBin(StrToHex(plaintext)), IP)
+    netss = SubstitutionBox(HexToBin(StrToHex(plaintext)), IP)  # 使用IP盒置换
 
-    L, R = netss[:32], netss[32:]
+    L, R = netss[:32], netss[32:]  # 左右分块
 
-    for i in range(16):                                     #Feistel怎么可以这么简洁
+    for i in range(16):  # Feistel怎么可以这么简洁
 
-        L, R = R, Binxor(L, Function(R, secretkey[i]))
+        L, R = R, Binxor(L, Function(R, secretkey[i]))  # 使用F函数加密R和KEY
 
-    return SubstitutionBox(R + L, IP_1)
+    return SubstitutionBox(R + L, IP_1)  # 返回IP-1置换的结果
 
 
 def encryption(plaintext, secretkey):
 
-    plaintext = plaintext + (8 - len(plaintext) % 8) * '\0'   #这里是有问题的，如果当前长度正好等于8呢，会多余的添加8个00字符
+    # 这里是有问题的，如果当前长度正好等于8呢，会多余的添加8个00字符
+    plaintext = plaintext + (8 - len(plaintext) % 8) * '\0'
 
-    keys = enkey(secretkey[:8])
+    keys = enkey(secretkey[:8])  # 生成轮密钥16个
 
     ciphertext = ''
 
     for i in range(len(plaintext) / 8):
 
-        ciphertext += encrypt(plaintext[i * 8:(i + 1) * 8], keys)
+        # 每8位分块进行加密
+        ciphertext += endecrypt(plaintext[i * 8:(i + 1) * 8], keys)
 
-    return base64.b64encode(BinToStr(ciphertext))     #输出模式可以在这里修改：StrToHex(BinToStr(ciphertext))
+    # 输出模式可以在这里修改：StrToHex(BinToStr(ciphertext))
+    return base64.b64encode(BinToStr(ciphertext))
 
 
 def decryption(ciphertext, secretkey):
 
     ciphertext = base64.b64decode(ciphertext)
 
-    keys = enkey(secretkey[:8])
-
-    keys = keys[::-1]
+    keys = enkey(secretkey[:8])[::-1]  # 生成轮密钥，不过这个是逆序的
 
     plaintext = ''
 
     for i in range(len(ciphertext) / 8):
 
-        plaintext += encrypt(ciphertext[i * 8:(i + 1) * 8], keys)
+        plaintext += endecrypt(ciphertext[i * 8:(i + 1) * 8], keys)  # 分块进行解密
 
-    return BinToStr(plaintext)     
+    return BinToStr(plaintext)
+
 
 print decryption(encryption("happy every day,thank you very much", 'BobAlicezxx'), 'BobAlicezxx')
